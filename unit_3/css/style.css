@@ -1,0 +1,33 @@
+body {
+	color: white;
+	text-align: center;
+	background: url("images/heroimage.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+h1 {
+	font-family: "Courier New";
+	text-align: center;
+	font-weight: 800;
+}
+
+#slogan {
+	font-style: italic;
+	text-align: center;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+}
+
+p {
+	font-size: 20px;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+ul {
+	font-family: Helvetica, arial, sans-serif;
+	list-style-type: none;
+}
+
+
