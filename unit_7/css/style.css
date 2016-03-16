@@ -21,7 +21,7 @@ nav {
 
 nav a {
 	color: #fff;
-	font-weight: 800;
+	font-weight: bold;
 	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -47,6 +47,9 @@ h3 {
 	margin: 1em auto;
 	text-transform: uppercase;
 	text-align: center;
+	position: absolute;
+	color: #fff;
+	width: 30%;
 }
 
 p {
@@ -71,14 +74,27 @@ hr {
 	margin: 2em auto;
 }
 
-footer nav a {
-	padding: 1em;
-	color: #595959;
-}
-
 footer {
 	text-align: center;
 	padding: 1em;
+}
+
+footer nav {
+	float: none;
+	margin: 0;
+}
+
+footer nav a {
+	text-transform: none;
+	font-weight: normal;
+	color: #595959;
+	border-right: 1px solid #595959;
+	margin: 0;
+	padding: 0.25em;
+}
+
+footer nav a:last-of-type {
+	border-right: none;
 }
 
 .service {
@@ -90,18 +106,21 @@ footer {
 	width: 30%;
 	margin: 1.5%;
 	float: left;
-	background: orange;
+	/*background: orange;*/
 }
 
 .button {
 	border: solid 3px #8c8c8c;
-	text-decoration: underline;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1px;
 	padding: 1.5em 2.5em;
 	width: 12em;
 	margin: 2em auto;
+}
+
+.button a {
+	border-bottom: 2px solid #8c8c8c;
 }
 
 .button:hover {
@@ -140,28 +159,6 @@ footer {
 	padding: 1em;
 }
 
-#two_column {
-	background-color: #ffb7cf;
-	border: 1px black solid;
-	padding: 20px;
-}
-
-#left {
-	background-color: #e582a2;
-	border: 1px black solid;
-	padding: 20px;
-	float: left;
-	width: 30%;
-}
-
-#right {
-	background-color: #e55b88;
-	border: 1px black solid;
-	padding: 20px;
-	float: right;
-	width: 62%;
-}
-
 #about_me {
 	width: 60%;
 	padding: 2em;	
@@ -171,13 +168,15 @@ footer {
 #about_me img {
 	width: 10em;
 	border-radius: 50%;
-	margin: 1em auto;
+	margin: 0 auto;
 	padding: 1em;
 	float: left;
 }
 
 #social {
 	margin-top: 1em;
-	list-style: none;
 	text-align: center;
+}
+#social img {
+	width: 3%;
 }
