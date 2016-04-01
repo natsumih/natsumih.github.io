@@ -45,7 +45,7 @@ h3 {
 	text-align: center;
 	position: absolute;
 	color: #fff;
-	top: 70%;
+	bottom: 20%;
 	right: 0;
 	left: 50%;
 	width: 60%;
@@ -91,6 +91,12 @@ blockquote cite:before {
 	text-align: right;
 }
 
+blockquote cite {
+	display: block;
+	margin-top: 0.7em;
+	text-align: right;
+}
+
 footer {
 	text-align: center;
 	padding: 1em;
@@ -125,7 +131,7 @@ label {
 }
 
 .topics {
-	width:95%;
+	width: 95%;
 	margin: 2em auto;
 }
 
@@ -276,33 +282,55 @@ label {
 }
 
 #social {
-	margin-top: 1em;
 	text-align: center;
 }
 
 #social img {
 	width: 3%;
+	min-width: 40px;
+	margin: 0.5em;
 }
 
 #toggle {
 	display: none;
 }
 
+#wrapper {
+	max-width: 1500px;
+}
+
+@media only screen and (max-width: 1183px) {
+	.season {
+		height: 431px;
+	}
+}
+
 @media only screen and (max-width: 918px) {
 	.topic {
-		width: 60%;
+		width: 70%;
 		margin: 4% auto;
 		float: none;
 	}
+
 	#quote-word {
 		font-family: 'Bitter', serif;
 		width: 45%;
 		padding: 2em 0 2em 4em;
 	}
+
 	#hero {
 		height: 400px;
 	}
 
+	.season {
+		width: 50%;
+		display: block;
+		height: auto;
+	}
+
+	.season img {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 690px) {
@@ -312,7 +340,7 @@ label {
 		padding: 0;
 		float: none;
 	}
-	
+
 	nav a {
 		display: block;
 		margin: 0;
@@ -343,7 +371,7 @@ label {
 	}
 
 	.topic {
-		width: 70%;
+		width: 80%;
 	}
 
 	.season {
@@ -374,6 +402,7 @@ label {
 		width: 100%;
 		float: none;
 		display: block;
+		padding: 1em 0;
 	}
 
 	#quote > img {
@@ -387,6 +416,11 @@ label {
 
 	#toggle:checked + nav {
 		display: block;
+		position: absolute;
+	}
+
+	#hero {
+		position: relative;
 	}
 
 	#social img {
@@ -394,11 +428,33 @@ label {
 	}
 }
 
-@media only screen and (max-width: 472px) {
-	.topic {
-		width: 70%;
+@media only screen and (max-width: 600px) {
+	.season {
+		display: block;
+		height: 292.5px;
 	}
-	#social img {
-		width: 8%;
+}
+
+@media only screen and (max-width: 598px) {
+	.season {
+		display: block;
+		height: 291.5px;
+	}
+
+	.topic {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 466px) {
+	.season {
+		width: 100%;
+	}
+	.season img {
+		width: 40%;
+	}
+
+	#about > img {
+		width: 40%;
 	}
 }
