@@ -112,7 +112,7 @@ footer nav a {
 	font-size: 1em;
 	color: #595959;
 	border-right: 1px solid #595959;
-	padding: 0.25em;
+	padding: 0.8em;
 }
 
 footer nav a:last-of-type {
@@ -324,7 +324,7 @@ label {
 	}
 
 	.season img {
-		width: 50%;
+		width: 65%;
 	}
 
 	#quote-word {
@@ -354,6 +354,10 @@ label {
 	#about > img {
 		width: 26%;
 		margin: 10% 0 0 5%;
+	}
+
+	.season img {
+		width: 75%;
 	}
 }
 
@@ -404,7 +408,7 @@ label {
 	}	
 
 	.season img {
-		width: 50%;
+		width: 75%;
 	}
 
 	#fourcolumns p:first-of-type {
@@ -455,14 +459,15 @@ label {
 @media only screen and (max-width: 600px) {
 	.season {
 		display: block;
-		height: 292.5px;
+		height: 337px;
 	}
-}
 
-@media only screen and (max-width: 598px) {
-	.season {
-		display: block;
-		height: 291.5px;
+	.season img {
+		width: 80%;
+	}
+
+	.season p {
+		margin-top: 0;
 	}
 
 	.topic {
@@ -470,13 +475,14 @@ label {
 	}
 }
 
-@media only screen and (max-width: 466px) {
+@media only screen and (max-width: 532px) {
 	.season {
 		width: 100%;
+		height: auto;
 	}
 
 	.season img {
-		width: 40%;
+		width: 70%;
 	}
 
 	#about > img {
